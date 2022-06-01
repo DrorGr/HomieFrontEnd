@@ -1,0 +1,140 @@
+.stay-search {
+    .search-mini {
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        text-transform: capitalize;
+        transform: translate(-50%, -24px);
+        font-size: rem(14px);
+        font-family: Roboto-medium;
+        background-color: $clr1;
+        color: $clr3;
+        padding: rem(15px) rem(15px) rem(15px) rem(24px);
+        border-radius: rem(999px);
+        border: 1px solid rgba(128, 128, 128, 0.2);
+        box-shadow: 0px 0px 5px #22222227;
+        cursor: pointer;
+
+        .svg-inline--fa.fa-w-16 {
+            position: absolute;
+            top: rem(7.5px);
+            right: rem(7px);
+            font-size: rem(32px);
+            padding: em(5px);
+            border-radius: rem(999px);
+            background-color: $clr4;
+            color: #fdfdfd;
+        }
+
+        @media (max-width: $normal-breakpoint) {
+            transform: translate(-69%, -24px);
+        }
+        @media (max-width: $narrow-breakpoint) {
+            width: 97%;
+            transform: translate(-50%, -24px);
+        }
+        @media (max-width: $mobile-breakpoint) {
+            width: 88%;
+        }
+    }
+
+    form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: rem(75px);
+        border: 1px solid rgba(128, 128, 128, 0.3);
+        cursor: pointer;
+        border-radius: rem(999px);
+        background-color: $clr1;
+        box-shadow: 0px 0px 5px #2222224a;
+
+        transform: translate(-50%, -145%) scale(0.5);
+        transition: transform 0.2s, opacity 0.2s;
+        opacity: 0;
+        pointer-events: none;
+
+        label {
+            font-size: rem(14px);
+            font-family: Roboto-medium;
+            color: $clr3;
+        }
+
+        input {
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background-color: inherit;
+            border-radius: rem(999px);
+            font-family: Roboto-light;
+        }
+
+        button {
+            position: absolute;
+            border-radius: 50%;
+            padding: 0.9rem;
+            margin: 0.2rem;
+            background-color: $clr4;
+            right: rem(4px);
+            top: rem(4.5px);
+
+            svg {
+                color: $clr1;
+                font-size: 1rem;
+            }
+        }
+
+        .search-input {
+            border-radius: rem(999px);
+            padding: 0.7rem 1.2rem 0.7rem 2.2rem;
+            &:hover {
+                background-color: darken($clr1, 10%);
+            }
+        }
+
+        .separator-vertical {
+            width: 1px;
+            background-color: $clr7;
+            margin: 15px 0;
+        }
+
+        @media (max-width: $narrow-breakpoint) {
+            
+            flex-direction: column;
+            border-radius: 8px;
+            width: 98%;
+            display: block;
+            .search-input {
+                border-radius: rem(8px);
+                padding: 1.5rem 4rem 1.5rem 1.5rem;
+                &:hover {
+                    background-color: $clr1;
+                }
+            }
+
+            button {
+                margin: 0;
+                right: 1.5rem;
+                top: 13.7rem;
+            }
+
+            .date-input {
+                padding: 0rem 4rem 0rem 1.5rem;
+            }
+        }
+
+        @media (max-width: $mobile-breakpoint) {
+            width: 90%;
+        }
+    }
+}
+
+form > div.search-input.date-input.flex.column.justify-center > div.DateRangePicker.DateRangePicker_1 > div > div {
+    display: flex;
+    width: 9.2rem;
+}
+
+.DayPickerKeyboardShortcuts_show {
+    display: none;
+}

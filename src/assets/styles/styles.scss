@@ -1,0 +1,48 @@
+// Setup
+@import "./setup/variables";
+@import "./setup/functions";
+@import "./setup/mixins";
+@import "./setup/typography";
+
+//Views
+@import "./views/home-page";
+@import "./views/stay_details";
+@import "./views/login-signup";
+@import "./views/user-profile";
+@import "./views/stay-trips";
+
+// Basics
+@import "./basics/helpers";
+@import "./basics/layout";
+@import "./basics/base";
+@import "./basics/buttons";
+@import "./basics/on-events";
+
+// Components
+@import "./components/header";
+@import "./components/stay-list";
+@import "./components/stay-preview";
+@import "./components/stay-rate";
+@import "./components/stay-book-modal";
+@import "./components/gradient-btn";
+@import "./components/city-card";
+@import "./components/footer";
+@import "./components/asset-details";
+@import "./components/amenities";
+@import "./components/image-carousel";
+@import "./components/dropdown-filter";
+@import "./components/reviews";
+@import "./components/stay-search"; 
+@import "./components/calender";
+@import "./components/stay-list-filter";
+@import "./components/reviews-modal";
+@import "./components/google-map";
+@import "./components/stay-guest-modal";
+@import './components/host-orders-preview';
+@import './components/dashboard-header';
+@import './components/user-order-preview';
+@import "./components/loader";
+@import "./components/save-stay";
+@import "./components/host-home-preview";
+@import "./components/host-homes";
+

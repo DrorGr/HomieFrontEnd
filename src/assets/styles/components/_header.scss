@@ -1,0 +1,134 @@
+header {
+    width: 100%;
+    position: fixed;
+    background-color: $clr1;
+    z-index: 100;
+    transition: all 0.1s ease-out;
+    box-shadow: 0px 0px 5px #22222227;
+
+    .nav-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        width: 100%;
+        max-width: $normal-breakpoint;
+        margin: 0 auto;
+        padding: 1.3rem 0;
+        transition: all 0.15s ease-out;
+
+        a {
+            font-size: rem(14px);
+        }
+
+        h1 {
+            position: relative;
+            display: flex;
+            align-items: center;
+            font-size: rem(32px);
+            color: $clr4;
+            svg {
+                margin: 0 rem(4px) rem(4px) 0;
+                max-width: rem(32px);
+                max-height: rem(32px);
+            }
+        }
+
+        .nav-link {
+            .login-signup-btn {
+                display: flex;
+                cursor: pointer;
+                border: 1px solid $clr7;
+                color: rgba(0, 0, 0, 0.72);
+                padding: rem(4px) rem(8px);
+                border-radius: rem(20px);
+
+                & :first-child {
+                    margin-inline-end: rem(10px);
+                }
+                svg:first-child {
+                    max-width: 14px;
+                    max-height: 14px;
+                    margin-left: 6px;
+                }
+                svg:last-child {
+                    max-width: 28px;
+                    max-height: 28px;
+                }
+            }
+            & li:not(:last-child) {
+                margin-inline-end: 1rem;
+            }
+        }
+
+        .user-modal {
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            border-radius: rem(5px);
+            position: absolute;
+            right: rem(20px);
+            top: rem(78px);
+            background-color: $clr1;
+            width: rem(268px);
+            flex-direction: column;
+            a {
+                color: $clr3;
+                &:visited {
+                    color: $clr3;
+                }
+            }
+            ul {
+                width: 100%;
+                li {
+                    cursor: pointer;
+                    padding: rem(14px) rem(10px);
+                    width: 100%;
+                    transition: ease-in-out 0.2s;
+                    &:hover {
+                        background-color: darken($clr1, 10%);
+                    }
+                }
+            }
+        }
+
+        @media (max-width: $normal-breakpoint) {
+            max-width: $narrow-breakpoint;
+        }
+        @media (max-width: $narrow-breakpoint) {
+            h1 {
+                opacity: 0;
+                pointer-events: none;
+            }
+            .nav-link {
+                position: fixed;
+                width: 100%;
+                bottom: -1px;
+                left: 0;
+                justify-content: space-around;
+                background-color: #fff;
+                padding: 1rem;
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+            }
+            .user-modal {
+                top: rem(630px);
+            }
+            max-width: $mobile-breakpoint;
+        }
+    }
+
+    .avatar-container {
+        max-width: 36px;
+        .MuiAvatar-root {
+            width: 30px;
+            height: 30px;
+            display: flex;
+            overflow: hidden;
+            align-items: center;
+            border-radius: 50%;
+            justify-content: flex-start;
+            .MuiBadge-anchorOriginTopRightRectangle {
+                top: 2px;
+                right: 6px;
+            }
+        }
+    }
+}

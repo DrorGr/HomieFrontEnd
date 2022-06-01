@@ -1,0 +1,24 @@
+.image-carousel {
+    .slick-dots {
+        li {
+            margin: 0;
+        }
+
+        bottom: 5px;
+        button {
+            margin-right: 0px;
+        }
+
+        button {
+            opacity: 1;
+        }
+        button::before {
+            opacity: 0.5;
+            color: rgb(255, 255, 255);
+        }
+        .slick-active button:before{
+            opacity: 1;
+            color: rgb(255, 255, 255);
+        }
+    }
+}

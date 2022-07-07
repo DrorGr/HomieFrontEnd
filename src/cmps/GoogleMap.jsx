@@ -45,5 +45,5 @@ class _GoogleMap extends Component {
 }
 
 export const GoogleMap = GoogleApiWrapper({
-    apiKey: ('AIzaSyCjIexPtvV4Y3_C8J8NR1yfnrQr5s1LibY')
+    apiKey: ('AIzaSyDUWCE4l1Qle1kbFkti_JHwA2OQ6_i25_U')
 })(_GoogleMap)
